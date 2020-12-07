@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bus Ticket Booking</title>
+	<link rel="stylesheet" href="newjq.css"/>
+	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<style>
+	h1{
+		text-align:center;
+		text-color:white;
+		text-shadow:5px 5px 5px red;
+	}
+	.footer{
+		position:fixed;
+		left:0;
+		bottom:0;
+		width:100%;
+	}
+	</style>
+	<script rel="text/javascript" src="jquery.js"></script>
+	<script rel="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="mainpage" data-theme="d">
+	<div data-role="header">
+		<a href="#left-panel" data-iconpos="notext" data-role="button" data-icon="bars">Menu</a>
+		<div style="text-align:center" role="main" class="ui-content" data-role="panel" data-display="overlay" id="left-panel">
+			<h4>Welcome to Booking</h4><br>
+			<ul data-role="listview">
+				<li><a href="#mainpage" data-role="button">Home Page</a></li><br>
+				<li><a href="#admin" data-role="button">Admin Login</a></li><br>
+				<li><a href="#agent" data-role="button">Agent Login</a></li><br>
+			</ul>
+		</div>
+		<h1>Bus Ticket Booking</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#mainpage" data-icon="home">Home</a></li>
+				<li><a href="#contact" data-icon="phone">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<h4 style="text-align:center">Welcome!</h4>
+	<div role="main" class="ui-content">
+		<a href="#admin" data-transition="flip" data-role="button">Admin Login</a>
+		<a href="#agent" data-transition="flip"data-role="button">Agent Login</a>
+		<a href="#" data-transition="flip" data-role="button">Exit</a>
+	</div>
+	<div class="footer" data-role="footer">
+		<h4>For more Details<br>Visit: <a href="#warning" data-rel="popup">www.busticketbooking.org</a></h4>
+	</div>
+	<div style="text-align:center" data-role="popup" id="warning" data-theme="a" class="ui-corner-all">
+		<h3>WARNING</h3>
+		<p>Website in under maintenance</p>
+	</div>
+</div>
+<div data-role="page" id="admin" data-theme="d">
+	<div data-role="header">
+		<a href="#left-panel" data-iconpos="notext" data-role="button" data-icon="bars">Menu</a>
+		<div style="text-align:center" role="main" class="ui-content" data-role="panel" data-display="overlay" id="left-panel">
+			<h4>Welcome to Booking</h4><br>
+			<ul data-role="listview">
+				<li><a href="#mainpage" data-role="button">Home Page</a></li><br>
+				<li><a href="#admin" data-role="button">Admin Login</a></li><br>
+				<li><a href="#agent" data-role="button">Agent Login</a></li><br>
+			</ul>
+		</div>
+		<h1>Bus Ticket Booking</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#mainpage" data-icon="home">Home</a></li>
+				<li><a href="#contact" data-icon="phone">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div data-role="">
+		<h4>Admin Login</h4>
+		<form>
+			<input type="text" name="userid" id="userid" value="" placeholder="Enter your user ID">
+			<input type="password" data-clear-btn="false" name="password" id="pwd" value="" placeholder="Password" autocomplete="off">
+		</form>
+	</div>
+	
+	
+	<p style="text-align:center"><a href="#popupscr" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a"  data-transition="pop">Login</a></p>
+	<div style="text-align:center" data-role="popup" id="popupscr" data-theme="a" class="ui-corner-all">
+		<h3>Thank you for visiting</h3>
+		<a href="#mainpage" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">OK</a>
+	</div>
+	<div class="footer" data-role="footer">
+		<h4>For more Details<br>Visit: <a href="#warning" data-rel="popup">www.busticketbooking.org</a></h4>
+	</div>
+	<div style="text-align:center" data-role="popup" id="warning" data-theme="a" class="ui-corner-all">
+		<h3>WARNING</h3>
+		<p>Website in under maintenance</p>
+	</div>
+</div>
+<div data-role="page" id="agent" data-theme="d">
+	<div data-role="header">
+		<a href="#left-panel" data-iconpos="notext" data-role="button" data-icon="bars">Menu</a>
+		<div style="text-align:center" role="main" class="ui-content" data-role="panel" data-display="overlay" id="left-panel">
+			<h4>Welcome to Booking</h4><br>
+			<ul data-role="listview">
+				<li><a href="#mainpage" data-role="button">Home Page</a></li><br>
+				<li><a href="#admin" data-role="button">Admin Login</a></li><br>
+				<li><a href="#agent" data-role="button">Agent Login</a></li><br>
+			</ul>
+		</div>
+		<h1>Bus Ticket Booking</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#mainpage" data-icon="home">Home</a></li>
+				<li><a href="#contact" data-icon="phone">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<h4 style="text-align:center">Agent Login</h4>
+	<div role="main" class="ui-content">
+		<a href="#listdetails" data-transition="flip" data-role="button">List the bus details</a>
+		<a href="#bookticket" data-transition="flip"data-role="button">Book Ticket</a>
+		<a href="#showbooking" data-transition="flip" data-role="button">Show my booking</a>
+		<a href="#mainpage" data-transition="flip"data-role="button">Logout</a>
+	</div>
+	
+	<div class="footer" data-role="footer">
+		<h4>For more Details<br>Visit: <a href="#warning" data-rel="popup">www.busticketbooking.org</a></h4>
+	</div>
+	<div style="text-align:center" data-role="popup" id="warning" data-theme="a" class="ui-corner-all">
+		<h3>WARNING</h3>
+		<p>Website in under maintenance</p>
+	</div>
+</div>
+<div data-role="page" id="contact" data-theme="d">
+	<div data-role="header">
+		<a href="#left-panel" data-iconpos="notext" data-role="button" data-icon="bars">Menu</a>
+		<div style="text-align:center" role="main" class="ui-content" data-role="panel" data-display="overlay" id="left-panel">
+			<h4>Welcome to Booking</h4><br>
+			<ul data-role="listview">
+				<li><a href="#mainpage" data-role="button">Home Page</a></li><br>
+				<li><a href="#admin" data-role="button">Admin Login</a></li><br>
+				<li><a href="#agent" data-role="button">Agent Login</a></li><br>
+			</ul>
+		</div>
+		<h1>Bus Ticket Booking</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#mainpage" data-icon="home">Home</a></li>
+				<li><a href="#contact" data-icon="phone">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<h3 style="text-align:center;">For more Details - Contact is on</h3>
+	<div class="ui-body ui-body-a ui-corner-all" style="text-align:center">
+		<a href="#popupscr2" style="width:90%" data-role="button" data-icon="phone" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">+91 90802 90802</a><br>
+		<a href="#popupscr2" style="width:90%" data-role="button" data-icon="phone" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">0421-223344</a>
+	</div>
+	<h3 class="ui-bar ui-bar-a ui-corner-all" style="text-align:center;">You can also reach us on</h3>
+	<div class="ui-body ui-body-a ui-corner-all" style="text-align:center">
+		<a href="#popupscr3" style="width:90%;background-color:blue;" data-role="button" data-icon="user" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">FACE BOOK</a><br>
+		<a href="#popupscr3" style="width:90%;background-color:orange;" data-role="button" data-icon="navigation" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all  ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">INSTAGRAM</a><br>
+		<a href="#popupscr3" style="width:90%;background-color:green;" data-role="button" data-icon="mail" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">WHATSAPP</a><br>
+	</div>
+	
+	<div class="footer" data-role="footer">
+		<h4>For more Details<br>Visit: <a href="#warning" data-rel="popup">www.busticketbooking.org</a></h4>
+	</div>
+	<div style="text-align:center" data-role="popup" id="warning" data-theme="a" class="ui-corner-all">
+		<h3>WARNING</h3>
+		<p>Website in under maintenance</p>
+	</div>
+</div>
+</body>
+</html>
